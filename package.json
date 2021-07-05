@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shamalipathirana/WEATHER/issues"
   },
-  "homepage": "https://github.com/shamalipathirana/WEATHER#readme"
+  "homepage": "https://github.com/shamalipathirana/WEATHER#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
