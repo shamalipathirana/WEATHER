@@ -7,6 +7,15 @@ const port = process.env.PORT || 3000
 
 const publicStaticDirPath = path.join(__dirname, '../public');
 
+const viewsPath = path.join(__dirname, '../templates/views');
+
+const partialsPath = path.join(__dirname, '../templates/partials');
+
+// setup handlebars engine and templates path
+app.set('view engine', 'hbs');
+app.set('views', viewsPath);
+hbs.registerPartials(partialsPath);
+
 // static dir to serve static content
 app.use(express.static(publicStaticDirPath));
 
